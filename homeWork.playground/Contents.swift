@@ -107,3 +107,165 @@ print(4 * 9 - 6 / 2)
 print(4 * (9 - 6) / 2)
 
 
+///HW4
+///Problem 1
+9 == 9
+print(true)
+print(9 == 9)
+9 != 9
+print(false)
+print(9 != 9)
+47 > 90
+print(false)
+print(47 > 90)
+47 < 90
+print(true)
+print(47 < 90)
+4 <= 4
+print(true)
+print(4 <= 4)
+4 >= 5
+print(false)
+print(4 >= 5)
+(47 > 90) && (47 < 90)
+print(false)
+print((47 > 90) && (47 < 90))
+(47 > 90) || (47 < 90)
+print(true)
+print((47 > 90) || (47 < 90))
+!true
+print(false)
+print(!true)
+
+///Problem 2
+var tenge = 2000
+if tenge == 0{
+    print("Извини, но ты на мели!")
+}else if tenge < 400{
+    print("Вау, у тебя есть деньги на пирожки!")
+}else{
+    print("Едем на Такси!")
+}
+
+///Problem 3
+let hasFish = true
+let hasPizza = false
+let hasVegan = true
+
+if hasFish && hasPizza && hasVegan{
+    print("print")
+}else{
+    print("Извините, нам нужно выбрать другое место")
+}
+
+///Problem 4
+let isNiceWeather = false
+if isNiceWeather{
+    print("Я иду на прогулку!")
+}
+
+///Problem 5
+let yearSeason = 1
+switch yearSeason{
+case 1:
+    print("Зима")
+case 2:
+    print("Весна")
+case 3:
+    print("Лето")
+case 4:
+    print("Осень")
+default:
+    print("Не знаю")
+}
+
+///Problem 6
+let listOfGuests = ["Aibar", "Nazym", "Doszhan", "Yelvira"]
+let guestName = "Aibar"
+if listOfGuests.contains(guestName){
+    print("Добро пожаловать")
+}else{
+    print("Вас нет в списке")
+}
+
+///Problem 7
+let age = 16
+switch age{
+case 0...2:
+    print("Младенец")
+case 3...14:
+    print("Детский")
+case 15...:
+    print("Взрослый")
+default:
+    print("Не знаю")
+}
+
+///Problem 8
+let pizza = 2490
+let sandwich = 1600
+print("Я покупаю: \(sandwich > pizza ? "sandwich" : "pizza")")
+
+///Problem 9
+let day = 3
+switch day {
+case 1:
+    print("Понедельник:")
+    print("Закончить таблицу по годовым расходам")
+    print("Отправить отчет шефу")
+case 2:
+    print("Вторник:")
+    print("Собрание в 16:00")
+case 3:
+    print("Среда:")
+    print("Подготовить документы по операции \"Домашка\"")
+case 4:
+    print("Четверг:")
+    print("Подготовить список нужных товаров")
+case 5:
+    print("Пятница:")
+    print("Купить все товары по списку")
+case 6:
+    print("Суббота:")
+    print("Пусто")
+case 7:
+    print("Воскресенье:")
+    print("Пусто")
+default:
+    break
+}
+///Problem 10
+let station = "A"
+switch station {
+case "A", "a":
+    print("A")
+    print("45 мин.")
+case "B", "b":
+    print("B")
+    print("25 мин.")
+case "C", "c":
+    print("C")
+    print("34 мин.")
+case "D", "d":
+    print("D")
+    print("21 мин.")
+default:
+    print("Такой станции не существует. Введите название станции еще раз.")
+}
+
+///Problem 11
+let finger = 3
+switch finger {
+case 1:
+    print("Большой")
+case 2:
+    print("Указательный")
+case 3:
+    print("Средний")
+case 4:
+    print("Безымянный")
+case 5:
+    print("Мизинец")
+default:
+    print("Такого пальца нет. Только если вы не мутант...")
+}
