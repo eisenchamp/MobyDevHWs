@@ -269,3 +269,78 @@ case 5:
 default:
     print("Такого пальца нет. Только если вы не мутант...")
 }
+
+///HW #5
+///Problem 1
+var myName = "Tim"
+print(myName)
+let favoriteQuote = "От любви до ненависти один шаг"
+print("Моя любимая цитата - \"\(favoriteQuote)\"")
+
+var emptryString = "lmfao"
+if emptryString.isEmpty{
+    print("Здесь ничего нет")
+}else{
+    print("Она не пуста, как я думал")
+}
+
+///Problem 2
+let city : String = "Karaganda"
+let region : String = "Karagandinskaya Obl."
+let home = city + ", " + region
+print(home)
+
+var introduction = "Я живу в "
+introduction += home
+print(introduction)
+
+let myName1 = "Tim"
+let myAge = 25
+
+print("Меня зовут \(myName1), и на следующий год мне будет \(myAge + 1) лет")
+
+
+///Problem 3
+let name1 : String = "Selim"
+let surname : String = "Erdoglu"
+let fullName = name1 + " " + surname
+print(fullName)
+
+let previousBest = 450392
+let newBest = 61564
+
+let congratulations = "Поздравляем, \(fullName)! Вы превзошли свой предыдущий рекорд в \(previousBest) шагов, сделав \(newBest) шагов вчера!"
+print(congratulations)
+
+///Problem 4
+///4.1
+let nameInCaps = "TIM"
+let name2 = "tim"
+
+if nameInCaps == name2{
+    print("Эти две строки равны")
+}else{
+    print("Эти две строки не равны")
+}
+
+if nameInCaps.lowercased() == name2{
+    print("\(nameInCaps) и \(name2) совпадают")
+}else{
+    print("\(nameInCaps) и \(name2) не совпадают")
+}
+///4.2
+let sonName = "Robert Downey Jr."
+if sonName.contains("Jr."){
+    print("Это имя используется второе поколение")
+}
+
+///4.3
+let textToSearchThrough = "быть или не быть вот в чём вопрос"
+let textToSearchFor = "быть или не быть"
+if textToSearchThrough.lowercased().contains(textToSearchFor){
+    print("Я нашел!")
+}
+
+///4.4
+let myName2 = "Temirlan"
+print(myName2.count)
